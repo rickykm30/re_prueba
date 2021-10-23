@@ -1,0 +1,188 @@
+p{
+color:blue;
+}
+h1{
+color:chartreuse;    
+}
+h2{
+    color:darkorange;
+}
+ul{
+    color:deeppink;
+}
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Architects Daughter', cursive;
+}
+/* -----------HEADER */
+.header-banner{
+    background-image: url("img/banner1.jpg");
+    background-color: rgb(250, 235, 252);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    height: 20vh;
+}
+.header__navbar--principal{
+    padding: 20px;
+    list-style: none;
+}
+.header__navbar--principal li{
+    display: inline-block;
+}
+.header__navbar--principal a{
+    text-decoration: none;
+    text-align:right ;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif; 
+    font-size: 1rem;
+    color: white;
+    padding: 0.5rem;
+    background-color: rgb(91, 58, 238); 
+}
+/* ------ CONTENIDO*/
+.contenedorFlex{
+    display: flex;
+}
+
+.section-contenido{
+    background-color: rgb(247, 148, 202);
+    padding: 2rem;
+    margin: 2rem;
+    width: 70%;
+    font-size: 1.2rem;
+    line-height: 1.8rem;
+    text-align: justify;
+    list-style: none;
+}
+.img__locales{
+    display: flex
+}
+
+.img__locales img{
+    width: 50%;
+    padding: 1rem;
+}
+
+.bordesRedondeados{
+    border-radius: 40px;
+}
+
+
+
+
+
+
+/* ASIDE COLUMNA*/
+.columna{
+background-image: linear-gradient(45deg, #fc0707 0%, #4d3caa 50%, #d5ff1b 100%);
+width: 30%;
+padding: 2rem;
+font-size: 1.2rem;
+}
+
+/* -----footer*/
+footer{
+    background-color: rgb(17, 16, 16);
+    color: white;
+    list-style: none;
+
+    }
+.footer__flex{
+    display: flex;
+    justify-content: space-around;
+}
+.footer__menu{
+    list-style: none;
+    text-align: center;
+
+}
+.footer__menu a{
+    text-decoration: none;
+    color: white;
+    font-size: 0.8rem;
+}
+.footer__credito{
+    text-align: center;
+    padding: 1rem;
+    font-size: 0.7rem;
+}
+
+
+/* -----FLEXBOX*/
+
+
+.flex-container{
+    display: flex;
+    background-color: rgb(47, 0, 158);
+    padding: 10px;
+    flex-wrap: row wrap;
+    justify-content:space-evenly;
+    align-items:baseline;
+
+}
+.flex-container div{
+    background-color: blanchedalmond;
+    margin: 10px;
+    padding: 10px;
+}
+
+
+/* -----tranformacion*/
+
+
+.efecto-imagen img{
+    width: 200px;
+    height: 200px;
+    background-color: thistle;
+    transition: heigth 1s, width 2s;
+}
+
+.efecto-imagen img:hover{
+    height: 300px;
+    width: 300px;
+}
+
+/* -----ANIMACION*/
+
+.anime{
+    width: 65px;
+    height: 65px;
+    background-color: turquoise;
+    animation-name: animacion;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    position: relative;
+    -o-animation-direction: normal;
+}
+
+@keyframes animacion{
+    0%{
+        background-color: turquoise;
+        left: 0px;
+        top: 0px;
+    }
+    25%{
+        background-color: rgb(218, 255, 6);
+        left: 400px;
+        top: 0px;
+    }
+    50%{
+        background-color: tomato;
+        left: 0px;
+        top: 0px;
+    }
+    75%{
+        background-color: rgb(136, 237, 255);
+        left: 0px;
+        top: 0px;
+    }
+    100%{
+        background-color: rgb(17, 245, 36);
+        left: 0px;
+        top: 0px;
+    }
+}
